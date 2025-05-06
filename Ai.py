@@ -98,7 +98,7 @@ class WorkerThread(QThread):
 
         self.update_progress.emit(90)
 
-        total = compatividade + keywords_percent
+        total = compatividade + keywords_percent / 2
         if compatividade >= 100:
          resultado += f"\nCompatibilidade Total: {total}%\n"
 
